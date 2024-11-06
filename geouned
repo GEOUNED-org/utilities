@@ -31,7 +31,7 @@ args = parser.parse_args()
 def main():
 
     if not Path(args.input).exists():
-    raise FileNotFoundError(f"config file {args.input} not found") 
+        raise FileNotFoundError(f"config file {args.input} not found") 
     
     if args.reverse :
        with open(args.input) as f:
